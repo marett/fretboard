@@ -14,6 +14,7 @@ body {
 	font-weight: 400;
 }
 
+
 h1 {
 	font-weight: 800;
 }
@@ -197,8 +198,25 @@ ul {
 	li {
 		list-style: none;
 		display: inline-block;
-		margin-right: 0.75rem;
+		margin-right: 0.55rem;
 		padding-bottom: 1.75rem;
+
+		&:nth-of-type(4n) {
+			margin-right: 0;
+		}
+
+		@media (min-width: 992px),
+		(orientation: landscape) {
+			margin-right: 0.75rem;
+
+			&:nth-of-type(4n) {
+				margin-right: 0.75rem;
+			}
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
 	}
 }
 
@@ -251,7 +269,8 @@ button.note {
 .intro {
 	text-align: center;
 
-	@media (min-width: 992px), (orientation: landscape) {
+	@media (min-width: 992px),
+	(orientation: landscape) {
 		text-align: left;
 	}
 }
@@ -417,7 +436,7 @@ button.group {
 .fretboard-container {
 	//outline: 1px solid green;
 	display: flex;
-	padding: 0 30px;
+	padding: 0 0 0 36px;
 	height: 95vh;
 	min-height: 550px;
 	max-height: 850px;
@@ -426,7 +445,8 @@ button.group {
 	max-width: 380px;
 	margin: 0 auto;
 
-	@media (min-width: 992px), (orientation: landscape) {
+	@media (min-width: 992px),
+	(orientation: landscape) {
 		flex-direction: column;
 		height: auto;
 		min-height: 200px;
@@ -434,7 +454,7 @@ button.group {
 		margin: 0 auto;
 		padding: 0 30px;
 	}
-	
+
 	.container-fluid {
 		padding: 0;
 		margin: 0;
@@ -445,7 +465,7 @@ button.group {
 .noteboard {
 	//outline: 1px solid orange;
 	width: 80px;
-	margin: 0 0 0 15px;
+	margin: 0 0 0 5px;
 	//height: auto;
 	position: sticky;
 	top: 0;
@@ -481,7 +501,8 @@ button.group {
 		}
 	}
 
-	@media (min-width: 992px), (orientation: landscape) {
+	@media (min-width: 992px),
+	(orientation: landscape) {
 		width: 100%;
 		position: relative;
 		margin: 0;
@@ -501,7 +522,8 @@ button.group {
 	//outline: 1px solid red;
 	width: 220px;
 
-	@media (min-width: 992px), (orientation: landscape) {
+	@media (min-width: 992px),
+	(orientation: landscape) {
 		height: auto;
 		min-height: 200px;
 		width: 100%;
@@ -534,11 +556,21 @@ button.group {
 			0 16px 32px rgba($n, 0.27),
 			0 32px 64px rgba($n, 0.27);
 
-		@media (min-width: 992px), (orientation: landscape) {
+
+
+		@media (orientation: landscape) {
+			margin: 40px auto 0;
+			max-width: 1660px;
+			width: 100%;
+			transform-origin: center;
+			transform: rotate(0);
+		}
+
+		@media (min-width: 992px) {
+			transform: rotate(-6deg);
 			margin: 0 auto;
 			max-width: 1660px;
 			width: 100%;
-			transform: rotate(-6deg);
 			transform-origin: center;
 		}
 
@@ -623,7 +655,8 @@ button.group {
 				opacity: 0;
 				transform: rotate(-90deg);
 
-				@media (min-width: 992px), (orientation: landscape) {
+				@media (min-width: 992px),
+				(orientation: landscape) {
 					transform: rotate(0);
 				}
 
@@ -676,7 +709,8 @@ button.group {
 					width: 90vh;
 					min-width: 520px;
 
-					@media (min-width: 992px), (orientation: landscape) {
+					@media (min-width: 992px),
+					(orientation: landscape) {
 						width: 100vw;
 					}
 				}
@@ -731,7 +765,8 @@ button.group {
 					box-shadow: none;
 					transform: rotate(-90deg) scale(0.5);
 
-					@media (min-width: 992px), (orientation: landscape) {
+					@media (min-width: 992px),
+					(orientation: landscape) {
 						transform: scale(0.5);
 					}
 
@@ -752,7 +787,8 @@ button.group {
 
 						transform: rotate(-90deg) scale(0.72);
 
-						@media (min-width: 992px), (orientation: landscape) {
+						@media (min-width: 992px),
+						(orientation: landscape) {
 							transform: scale(0.72);
 						}
 
@@ -774,7 +810,8 @@ button.group {
 				transform: rotate(-90deg) scale(0.9);
 				opacity: 1;
 
-				@media (min-width: 992px), (orientation: landscape) {
+				@media (min-width: 992px),
+				(orientation: landscape) {
 					transform: scale(0.9);
 				}
 
@@ -789,7 +826,8 @@ button.group {
 				border-radius: 2px;
 				transform: rotate(-90deg) scale(0.9);
 
-				@media (min-width: 992px), (orientation: landscape) {
+				@media (min-width: 992px),
+				(orientation: landscape) {
 					transform: scale(0.9);
 				}
 
@@ -807,7 +845,8 @@ section.chords {}
 .lower {
 	margin-top: 3rem;
 
-	@media (min-width: 992px), (orientation: landscape) {
+	@media (min-width: 992px),
+	(orientation: landscape) {
 		margin-top: 9rem;
 	}
 }
