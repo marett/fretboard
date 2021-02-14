@@ -251,7 +251,7 @@ button.note {
 .intro {
 	text-align: center;
 
-	@media (min-width: 992px) {
+	@media (min-width: 992px), (orientation: landscape) {
 		text-align: left;
 	}
 }
@@ -420,12 +420,13 @@ button.group {
 	padding: 0 30px;
 	height: 95vh;
 	min-height: 550px;
+	max-height: 850px;
 	position: relative;
 	width: 100%;
 	max-width: 380px;
 	margin: 0 auto;
 
-	@media (min-width: 992px) {
+	@media (min-width: 992px), (orientation: landscape) {
 		flex-direction: column;
 		height: auto;
 		min-height: 200px;
@@ -480,7 +481,7 @@ button.group {
 		}
 	}
 
-	@media (min-width: 992px) {
+	@media (min-width: 992px), (orientation: landscape) {
 		width: 100%;
 		position: relative;
 		margin: 0;
@@ -495,11 +496,12 @@ button.group {
 	display: flex;
 	height: 90vh;
 	min-height: 520px;
+	max-height: 800px;
 	position: relative;
 	//outline: 1px solid red;
 	width: 220px;
 
-	@media (min-width: 992px) {
+	@media (min-width: 992px), (orientation: landscape) {
 		height: auto;
 		min-height: 200px;
 		width: 100%;
@@ -512,6 +514,7 @@ button.group {
 		margin: -180px 0 0 0px;
 		width: 90vh;
 		min-width: 520px;
+		max-width: 800px;
 		grid-template-columns: auto 0.93333fr 0.91333fr 0.89333fr 0.87333fr 0.85333fr 0.83333fr 0.81333fr 0.79333fr 0.77333fr 0.75333fr 0.73333fr 0.71333fr;
 		grid-template-rows: repeat(6, auto);
 		background: linear-gradient(12deg, rgba($n, 0.2), rgba($n, 0.6)), white;
@@ -531,7 +534,7 @@ button.group {
 			0 16px 32px rgba($n, 0.27),
 			0 32px 64px rgba($n, 0.27);
 
-		@media (min-width: 992px) {
+		@media (min-width: 992px), (orientation: landscape) {
 			margin: 0 auto;
 			max-width: 1660px;
 			width: 100%;
@@ -620,7 +623,7 @@ button.group {
 				opacity: 0;
 				transform: rotate(-90deg);
 
-				@media (min-width: 992px) {
+				@media (min-width: 992px), (orientation: landscape) {
 					transform: rotate(0);
 				}
 
@@ -673,7 +676,7 @@ button.group {
 					width: 90vh;
 					min-width: 520px;
 
-					@media (min-width: 992px) {
+					@media (min-width: 992px), (orientation: landscape) {
 						width: 100vw;
 					}
 				}
@@ -728,7 +731,7 @@ button.group {
 					box-shadow: none;
 					transform: rotate(-90deg) scale(0.5);
 
-					@media (min-width: 992px) {
+					@media (min-width: 992px), (orientation: landscape) {
 						transform: scale(0.5);
 					}
 
@@ -749,7 +752,7 @@ button.group {
 
 						transform: rotate(-90deg) scale(0.72);
 
-						@media (min-width: 992px) {
+						@media (min-width: 992px), (orientation: landscape) {
 							transform: scale(0.72);
 						}
 
@@ -771,7 +774,7 @@ button.group {
 				transform: rotate(-90deg) scale(0.9);
 				opacity: 1;
 
-				@media (min-width: 992px) {
+				@media (min-width: 992px), (orientation: landscape) {
 					transform: scale(0.9);
 				}
 
@@ -786,7 +789,7 @@ button.group {
 				border-radius: 2px;
 				transform: rotate(-90deg) scale(0.9);
 
-				@media (min-width: 992px) {
+				@media (min-width: 992px), (orientation: landscape) {
 					transform: scale(0.9);
 				}
 
@@ -804,7 +807,7 @@ section.chords {}
 .lower {
 	margin-top: 3rem;
 
-	@media (min-width: 992px) {
+	@media (min-width: 992px), (orientation: landscape) {
 		margin-top: 9rem;
 	}
 }
