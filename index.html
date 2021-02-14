@@ -1,216 +1,216 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	
 	<link rel="stylesheet" href="assets/css/fretboard.css">
-	<title>Fretbored 🎸</title>
+	<link rel="icon" type="image/svg" href="assets/img/fretbored-sq.svg">
+	<title>fretbored</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5LKGRS8VE"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'G-W5LKGRS8VE');
+	</script>
 </head>
 
 <body>
 	<div class="container">
-		<section class="intro pt-5">
+		<section class="intro pt-5 pb-4">
 			<div class="row">
-				<div class="col-12 col-lg-8 col-xl-6">
-					<h1>frets 🎸</h1>
+				<div class="col-10 offset-1 col-lg-8 offset-lg-0 col-xl-6">
+					<img src="assets/img/fretbored.svg" class="fb-logo" role="presentation" alt="fretbored logo">
 					<p>Click a note to highlight those notes on the fretboard. Click on the fretboard to highlight individual notes, or use the buttons below to highlight groupings. </p>
 				</div>
 			</div>
 		</section>
-		<section class="buttons notes">
-			<div class="row">
-				<div class="col">
-					<ul class="pt-3">
-						<li><button data-note=".a.n" class="note a n"><b>A</b></button></li>
-						<li><button data-note=".a.s" class="note a s"><b>A</b></button></li>
-						<li><button data-note=".b.n" class="note b n"><b>B</b></button></li>
-						<li><button data-note=".c.n" class="note c n"><b>C</b></button></li>
-						<li><button data-note=".c.s" class="note c s"><b>C</b></button></li>
-						<li><button data-note=".d.n" class="note d n"><b>D</b></button></li>
-						<li><button data-note=".d.s" class="note d s"><b>D</b></button></li>
-						<li><button data-note=".e.n" class="note e n"><b>E</b></button></li>
-						<li><button data-note=".f.n" class="note f n"><b>F</b></button></li>
-						<li><button data-note=".f.s" class="note f s"><b>F</b></button></li>
-						<li><button data-note=".g.n" class="note g n"><b>G</b></button></li>
-						<li><button data-note=".g.s" class="note g s"><b>G</b></button></li>
-						<!--<li><button data-note=".n" class="note t"><b>0</b></button></li>-->
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<button class="clear">clear</button>
-				</div>
-			</div>
-		</section>
 	</div>
-	<div class="container-fluid">
-		<section class="fretboard pt-2 px-4">
-			<figure class="grid">
-				<!-- open -->
-				<div class="item open"><span class="note e o" data-shape="shape1"><b>E</b></span></div>
-				<div class="item open"><span class="note b o" data-shape="shape1"><b>B</b></span></div>
-				<div class="item open"><span class="note g o" data-shape="shape1"><b>G</b></span></div>
-				<div class="item open"><span class="note d o" data-shape="shape1"><b>D</b></span></div>
-				<div class="item open"><span class="note a o" data-shape="shape1"><b>A</b></span></div>
-				<div class="item open"><span class="note e o" data-shape="shape1"><b>E</b></span></div>
-				<!-- 1st -->
-				<div class="item"><span class="note f n"><b>f</b></span></div>
-				<div class="item"><span class="note c n"><b>c</b></span></div>
-				<div class="item"><span class="note g s"><b>G</b></span></div>
-				<div class="item"><span class="note d s"><b>d</b></span></div>
-				<div class="item"><span class="note a s"><b>a</b></span></div>
-				<div class="item"><span class="note f n"><b>f</b></span></div>
-				<!-- 2nd -->
-				<div class="item"><span class="note f s"><b>f</b></span></div>
-				<div class="item"><span class="note c s"><b>c</b></span></div>
-				<div class="item"><span class="note a n" data-shape="shape1 shape2"><b>a</b></span></div>
-				<div class="item"><span class="note e n" data-shape="shape1 shape2"><b>e</b></span></div>
-				<div class="item"><span class="note b n" data-shape="shape1 shape2"><b>b</b></span></div>
-				<div class="item"><span class="note f s"><b>f</b></span></div>
-				<!-- 3rd -->
-				<div class="item"><span class="note g n" data-shape="shape1 shape2"><b>g</b></span></div>
-				<div class="item"><span class="note d n" data-shape="shape1 shape2"><b>d</b></span></div>
-				<div class="item"><span class="note a s"><b>a</b></span></div>
-				<div class="item"><span class="note f n"><b>f</b></span></div>
-				<div class="item"><span class="note c n"><b>c</b></span></div>
-				<div class="item"><span class="note g n" data-shape="shape1 shape2"><b>g</b></span></div>
-				<!-- 4th -->
-				<div class="item"><span class="note g s"><b>g</b></span></div>
-				<div class="item"><span class="note d s"><b>d</b></span></div>
-				<div class="item"><span class="note b n" data-shape="shape2 shape3"><b>b</b></span></div>
-				<div class="item"><span class="note f s"><b>f</b></span></div>
-				<div class="item"><span class="note c s"><b>c</b></span></div>
-				<div class="item"><span class="note g s"><b>g</b></span></div>
-				<!-- 5th -->
-				<div class="item"><span class="note a n" data-shape="shape2 shape3"><b>a</b></span></div>
-				<div class="item"><span class="note e n" data-shape="shape2 shape3"><b>e</b></span></div>
-				<div class="item"><span class="note c n"><b>c</b></span></div>
-				<div class="item"><span class="note g n" data-shape="shape2 shape3"><b>g</b></span></div>
-				<div class="item"><span class="note d n" data-shape="shape2 shape3"><b>d</b></span></div>
-				<div class="item"><span class="note a n" data-shape="shape2 shape3"><b>a</b></span></div>
-				<!-- 6th -->
-				<div class="item"><span class="note a s"><b>a</b></span></div>
-				<div class="item"><span class="note f n"><b>f</b></span></div>
-				<div class="item"><span class="note c s"><b>c</b></span></div>
-				<div class="item"><span class="note g s"><b>g</b></span></div>
-				<div class="item"><span class="note d s"><b>d</b></span></div>
-				<div class="item"><span class="note a s"><b>a</b></span></div>
-				<!-- 7th -->
-				<div class="item"><span class="note b n" data-shape="shape3 shape4"><b>b</b></span></div>
-				<div class="item"><span class="note f s"><b>f</b></span></div>
-				<div class="item"><span class="note d n" data-shape="shape3 shape4"><b>d</b></span></div>
-				<div class="item"><span class="note a n" data-shape="shape3 shape4"><b>a</b></span></div>
-				<div class="item"><span class="note e n" data-shape="shape3 shape4"><b>e</b></span></div>
-				<div class="item"><span class="note b n" data-shape="shape3 shape4"><b>b</b></span></div>
-				<!-- 8th -->
-				<div class="item"><span class="note c n"><b>c</b></span></div>
-				<div class="item"><span class="note g n" data-shape="shape3 shape4"><b>g</b></span></div>
-				<div class="item"><span class="note d s"><b>d</b></span></div>
-				<div class="item"><span class="note a s"><b>a</b></span></div>
-				<div class="item"><span class="note f n"><b>f</b></span></div>
-				<div class="item"><span class="note c n"><b>c</b></span></div>
-				<!-- 9th -->
-				<div class="item"><span class="note c s"><b>c</b></span></div>
-				<div class="item"><span class="note g s"><b>g</b></span></div>
-				<div class="item"><span class="note e n" data-shape="shape4 shape5"><b>e</b></span></div>
-				<div class="item"><span class="note b n" data-shape="shape4 shape5"><b>b</b></span></div>
-				<div class="item"><span class="note f s"><b>f</b></span></div>
-				<div class="item"><span class="note c s"><b>c</b></span></div>
-				<!-- 10th -->
-				<div class="item"><span class="note d n" data-shape="shape4 shape5"><b>d</b></span></div>
-				<div class="item"><span class="note a n" data-shape="shape4 shape5"><b>a</b></span></div>
-				<div class="item"><span class="note f n"><b>f</b></span></div>
-				<div class="item"><span class="note c n"><b>c</b></span></div>
-				<div class="item"><span class="note g n" data-shape="shape4 shape5"><b>g</b></span></div>
-				<div class="item"><span class="note d n" data-shape="shape4 shape5"><b>d</b></span></div>
-				<!-- 11th -->
-				<div class="item"><span class="note d s"><b>d</b></span></div>
-				<div class="item"><span class="note a s"><b>a</b></span></div>
-				<div class="item"><span class="note f s"><b>f</b></span></div>
-				<div class="item"><span class="note c s"><b>c</b></span></div>
-				<div class="item"><span class="note g s"><b>g</b></span></div>
-				<div class="item"><span class="note d s"><b>d</b></span></div>
-				<!-- 12th -->
-				<div class="item "><span class="note e n" data-shape="shape5"><b>E</b></span></div>
-				<div class="item "><span class="note b n" data-shape="shape5"><b>B</b></span></div>
-				<div class="item "><span class="note g n" data-shape="shape5"><b>G</b></span></div>
-				<div class="item "><span class="note d n" data-shape="shape5"><b>D</b></span></div>
-				<div class="item "><span class="note a n" data-shape="shape5"><b>A</b></span></div>
-				<div class="item "><span class="note e n" data-shape="shape5"><b>E</b></span></div>
-			</figure>
-		</section>
-	</div>
-	<div class="container d-none">
-		<section class="buttons chords mt-3">
-			<h3>Notes in Chords</h3>
-			<ul class="pt-4">
-				<li><button data-notes="en an cs" class="group chords a n"><b>A</b></button></li>
-				<li><button data-notes="en an cn" class="group chords a s"><b>Am</b></button></li>
-				<li><button data-notes="fs bn ds" class="group chords b n"><b>B</b></button></li>
-				<li><button data-notes="fs bn dn" class="group chords b s"><b>Bm</b></button></li>
-				<li><button data-notes="cn gn en" class="group chords c n"><b>C</b></button></li>
-				<li><button data-notes="cn gn ds" class="group chords c s"><b>Cm</b></button></li>
-				<li><button data-notes="fs dn an" class="group chords d n"><b>D</b></button></li>
-				<li><button data-notes="fs bn dn" class="group chords d s"><b>Dm</b></button></li>
-				<li><button data-notes="en bn gs" class="group chords e n"><b>E</b></button></li>
-				<li><button data-notes="en bn an" class="group chords e s"><b>Em</b></button></li>
-				<li><button data-notes="fn cn an" class="group chords f n"><b>F</b></button></li>
-				<li><button data-notes="fn cn gs" class="group chords f s"><b>Fm</b></button></li>
-				<li><button data-notes="gn bn dn" class="group chords g n"><b>G</b></button></li>
-				<li><button data-notes="gn as dn" class="group chords g s"><b>Gm</b></button></li>
-			</ul>
-		</section>
-		<section class="buttons pentatonics mt-5">
-			<h3>Pentatonic Shapes</h3>
-			<ul class="pt-4">
-				<li><button data-notes="shape1" class="group penta c"><b>ONE</b></button></li>
-				<li><button data-notes="shape2" class="group penta a"><b>TWO</b></button></li>
-				<li><button data-notes="shape3" class="group penta e"><b>THREE</b></button></li>
-				<li><button data-notes="shape4" class="group penta b"><b>FOUR</b></button></li>
-				<li><button data-notes="shape5" class="group penta g"><b>FIVE</b></button></li>
-			</ul>
-		</section>
-	</div>
-	<div class="container">
-		<section class="buttons chords mt-3">
-			<div class="row">
-				<div class="col-12 col-lg-6 col-xl-5">
-					<h3>Pentatonic Shapes</h3>
-					<ul class="pt-4">
-						<li><button data-notes="shape1" class="group penta c"><b>ONE</b></button></li>
-						<li><button data-notes="shape2" class="group penta a"><b>TWO</b></button></li>
-						<li><button data-notes="shape3" class="group penta e"><b>THREE</b></button></li>
-						<li><button data-notes="shape4" class="group penta b"><b>FOUR</b></button></li>
-						<li><button data-notes="shape5" class="group penta g"><b>FIVE</b></button></li>
-					</ul>
+	<div class="fretboard-container">
+		<section class="noteboard notes mt-4">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<ul class="pt-3">
+							<li><button data-note="en" class="note e n"><b>E</b></button></li>
+							<li><button data-note="fn" class="note f n"><b>F</b></button></li>
+							<li><button data-note="fs" class="note f s"><b>F</b></button></li>
+							<li><button data-note="gn" class="note g n"><b>G</b></button></li>
+							<li><button data-note="gs" class="note g s"><b>G</b></button></li>
+							<li><button data-note="an" class="note a n"><b>A</b></button></li>
+							<li><button data-note="as" class="note a s"><b>A</b></button></li>
+							<li><button data-note="bn" class="note b n"><b>B</b></button></li>
+							<li><button data-note="cn" class="note c n"><b>C</b></button></li>
+							<li><button data-note="cs" class="note c s"><b>C</b></button></li>
+							<li><button data-note="dn" class="note d n"><b>D</b></button></li>
+							<li><button data-note="ds" class="note d s"><b>D</b></button></li>
+							<!--<li><button data-note=".n" class="note t"><b>0</b></button></li>-->
+						</ul>
+					</div>
 				</div>
-
-				<div class="col-12 col-lg-6  col-xl-5">
-					<h3>Notes in Chords</h3>
-					<ul class="pt-4">
-						<li><button data-notes="en an cs" class="group chords a n"><b>A</b></button></li>
-						<li><button data-notes="en an cn" class="group chords a s"><b>Am</b></button></li>
-						<li><button data-notes="fs bn ds" class="group chords b n"><b>B</b></button></li>
-						<li><button data-notes="fs bn dn" class="group chords b s"><b>Bm</b></button></li>
-						<li><button data-notes="cn gn en" class="group chords c n"><b>C</b></button></li>
-						<li><button data-notes="cn gn ds" class="group chords c s"><b>Cm</b></button></li>
-						<li><button data-notes="fs dn an" class="group chords d n"><b>D</b></button></li>
-						<li><button data-notes="fs bn dn" class="group chords d s"><b>Dm</b></button></li>
-						<li><button data-notes="en bn gs" class="group chords e n"><b>E</b></button></li>
-						<li><button data-notes="en bn an" class="group chords e s"><b>Em</b></button></li>
-						<li><button data-notes="fn cn an" class="group chords f n"><b>F</b></button></li>
-						<li><button data-notes="fn cn gs" class="group chords f s"><b>Fm</b></button></li>
-						<li><button data-notes="gn bn dn" class="group chords g n"><b>G</b></button></li>
-						<li><button data-notes="gn as dn" class="group chords g s"><b>Gm</b></button></li>
-					</ul>
+				<div class="row">
+					<div class="col-auto">
+						<button class="ui mute mt-4 mt-lg-0">sound
+							<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" id="volume-muted">
+								<path d="M6.717 3.55A.5.5 0 017 4v8a.5.5 0 01-.812.39L3.825 10.5H1.5A.5.5 0 011 10V6a.5.5 0 01.5-.5h2.325l2.363-1.89a.5.5 0 01.529-.06zm7.137 2.096a.5.5 0 010 .708L12.207 8l1.647 1.646a.5.5 0 01-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 01-.708-.708L10.793 8 9.146 6.354a.5.5 0 11.708-.708L11.5 7.293l1.646-1.647a.5.5 0 01.708 0z"></path>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="volume-full" viewBox="0 0 16 16">
+								<path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path>
+								<path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path>
+								<path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"></path>
+							</svg>
+						</button>
+					</div>
+					<div class="col">
+						<button class="ui clear mt-4 mt-lg-0">clear <span class="d-none d-xl-inline">the deck</span> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" id="dash-circle">
+								<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
+							</svg></button>
+					</div>
 				</div>
 			</div>
 		</section>
+		<section class="fretboard">
+			<div class="container-fluid">
+				<figure class="grid">
+					<!-- open -->
+					<div class="item open"><span class="note e o" data-note="en" data-shape="shape1"><b>E</b></span></div>
+					<div class="item open"><span class="note b o" data-note="bn" data-shape="shape1"><b>B</b></span></div>
+					<div class="item open"><span class="note g o" data-note="gn" data-shape="shape1"><b>G</b></span></div>
+					<div class="item open"><span class="note d o" data-note="dn" data-shape="shape1"><b>D</b></span></div>
+					<div class="item open"><span class="note a o" data-note="an" data-shape="shape1"><b>A</b></span></div>
+					<div class="item open"><span class="note e o" data-note="en" data-shape="shape1"><b>E</b></span></div>
+					<!-- 1st -->
+					<div class="item"><span class="note f n" data-note="fn"><b>f</b></span></div>
+					<div class="item"><span class="note c n" data-note="cn"><b>c</b></span></div>
+					<div class="item"><span class="note g s" data-note="gs"><b>G</b></span></div>
+					<div class="item"><span class="note d s" data-note="ds"><b>d</b></span></div>
+					<div class="item"><span class="note a s" data-note="as"><b>a</b></span></div>
+					<div class="item"><span class="note f n" data-note="fn"><b>f</b></span></div>
+					<!-- 2nd -->
+					<div class="item"><span class="note f s" data-note="fs"><b>f</b></span></div>
+					<div class="item"><span class="note c s" data-note="cs"><b>c</b></span></div>
+					<div class="item"><span class="note a n" data-note="an" data-shape="shape1 shape2"><b>a</b></span></div>
+					<div class="item"><span class="note e n" data-note="en" data-shape="shape1 shape2"><b>e</b></span></div>
+					<div class="item"><span class="note b n" data-note="bn" data-shape="shape1 shape2"><b>b</b></span></div>
+					<div class="item"><span class="note f s" data-note="fs"><b>f</b></span></div>
+					<!-- 3rd -->
+					<div class="item"><span class="note g n" data-note="gn" data-shape="shape1 shape2"><b>g</b></span></div>
+					<div class="item"><span class="note d n" data-note="dn" data-shape="shape1 shape2"><b>d</b></span></div>
+					<div class="item"><span class="note a s" data-note="as"><b>a</b></span></div>
+					<div class="item"><span class="note f n" data-note="fn"><b>f</b></span></div>
+					<div class="item"><span class="note c n" data-note="cn"><b>c</b></span></div>
+					<div class="item"><span class="note g n" data-note="gn" data-shape="shape1 shape2"><b>g</b></span></div>
+					<!-- 4th -->
+					<div class="item"><span class="note g s" data-note="gs"><b>g</b></span></div>
+					<div class="item"><span class="note d s" data-note="ds"><b>d</b></span></div>
+					<div class="item"><span class="note b n" data-note="bn" data-shape="shape2 shape3"><b>b</b></span></div>
+					<div class="item"><span class="note f s" data-note="fs"><b>f</b></span></div>
+					<div class="item"><span class="note c s" data-note="cs"><b>c</b></span></div>
+					<div class="item"><span class="note g s" data-note="gs"><b>g</b></span></div>
+					<!-- 5th -->
+					<div class="item"><span class="note a n" data-note="an" data-shape="shape2 shape3"><b>a</b></span></div>
+					<div class="item"><span class="note e n" data-note="en" data-shape="shape2 shape3"><b>e</b></span></div>
+					<div class="item"><span class="note c n" data-note="cn"><b>c</b></span></div>
+					<div class="item"><span class="note g n" data-note="gn" data-shape="shape2 shape3"><b>g</b></span></div>
+					<div class="item"><span class="note d n" data-note="dn" data-shape="shape2 shape3"><b>d</b></span></div>
+					<div class="item"><span class="note a n" data-note="an" data-shape="shape2 shape3"><b>a</b></span></div>
+					<!-- 6th -->
+					<div class="item"><span class="note a s" data-note="as"><b>a</b></span></div>
+					<div class="item"><span class="note f n" data-note="fn"><b>f</b></span></div>
+					<div class="item"><span class="note c s" data-note="cs"><b>c</b></span></div>
+					<div class="item"><span class="note g s" data-note="gs"><b>g</b></span></div>
+					<div class="item"><span class="note d s" data-note="ds"><b>d</b></span></div>
+					<div class="item"><span class="note a s" data-note="as"><b>a</b></span></div>
+					<!-- 7th -->
+					<div class="item"><span class="note b n" data-note="bn" data-shape="shape3 shape4"><b>b</b></span></div>
+					<div class="item"><span class="note f s" data-note="fs"><b>f</b></span></div>
+					<div class="item"><span class="note d n" data-note="dn" data-shape="shape3 shape4"><b>d</b></span></div>
+					<div class="item"><span class="note a n" data-note="an" data-shape="shape3 shape4"><b>a</b></span></div>
+					<div class="item"><span class="note e n" data-note="en" data-shape="shape3 shape4"><b>e</b></span></div>
+					<div class="item"><span class="note b n" data-note="bn" data-shape="shape3 shape4"><b>b</b></span></div>
+					<!-- 8th -->
+					<div class="item"><span class="note c n" data-note="cn"><b>c</b></span></div>
+					<div class="item"><span class="note g n" data-note="gn" data-shape="shape3 shape4"><b>g</b></span></div>
+					<div class="item"><span class="note d s" data-note="ds"><b>d</b></span></div>
+					<div class="item"><span class="note a s" data-note="as"><b>a</b></span></div>
+					<div class="item"><span class="note f n" data-note="fn"><b>f</b></span></div>
+					<div class="item"><span class="note c n" data-note="cn"><b>c</b></span></div>
+					<!-- 9th -->
+					<div class="item"><span class="note c s" data-note="cs"><b>c</b></span></div>
+					<div class="item"><span class="note g s" data-note="gs"><b>g</b></span></div>
+					<div class="item"><span class="note e n" data-note="en" data-shape="shape4 shape5"><b>e</b></span></div>
+					<div class="item"><span class="note b n" data-note="bn" data-shape="shape4 shape5"><b>b</b></span></div>
+					<div class="item"><span class="note f s" data-note="fs"><b>f</b></span></div>
+					<div class="item"><span class="note c s" data-note="cs"><b>c</b></span></div>
+					<!-- 10th -->
+					<div class="item"><span class="note d n" data-note="dn" data-shape="shape4 shape5"><b>d</b></span></div>
+					<div class="item"><span class="note a n" data-note="an" data-shape="shape4 shape5"><b>a</b></span></div>
+					<div class="item"><span class="note f n" data-note="fn"><b>f</b></span></div>
+					<div class="item"><span class="note c n" data-note="cn"><b>c</b></span></div>
+					<div class="item"><span class="note g n" data-note="gn" data-shape="shape4 shape5"><b>g</b></span></div>
+					<div class="item"><span class="note d n" data-note="dn" data-shape="shape4 shape5"><b>d</b></span></div>
+					<!-- 11th -->
+					<div class="item"><span class="note d s" data-note="ds"><b>d</b></span></div>
+					<div class="item"><span class="note a s" data-note="as"><b>a</b></span></div>
+					<div class="item"><span class="note f s" data-note="fs"><b>f</b></span></div>
+					<div class="item"><span class="note c s" data-note="cs"><b>c</b></span></div>
+					<div class="item"><span class="note g s" data-note="gs"><b>g</b></span></div>
+					<div class="item"><span class="note d s" data-note="ds"><b>d</b></span></div>
+					<!-- 12th -->
+					<div class="item "><span class="note e n" data-note="en" data-shape="shape5"><b>E</b></span></div>
+					<div class="item "><span class="note b n" data-note="bn" data-shape="shape5"><b>B</b></span></div>
+					<div class="item "><span class="note g n" data-note="gn" data-shape="shape5"><b>G</b></span></div>
+					<div class="item "><span class="note d n" data-note="dn" data-shape="shape5"><b>D</b></span></div>
+					<div class="item "><span class="note a n" data-note="an" data-shape="shape5"><b>A</b></span></div>
+					<div class="item "><span class="note e n" data-note="en" data-shape="shape5"><b>E</b></span></div>
+				</figure>
+			</div>
+		</section>
+	</div>
+	<div class="lower">
+		<div class="container">
+			<section class="buttons chords">
+				<div class="row">
+					<div class="col-12 col-lg-6 col-xl-5">
+						<h3>Pentatonic Shapes</h3>
+						<ul class="pt-4">
+							<li><button data-notes="shape1" class="group penta c"><b>ONE</b></button></li>
+							<li><button data-notes="shape2" class="group penta a"><b>TWO</b></button></li>
+							<li><button data-notes="shape3" class="group penta e"><b>THREE</b></button></li>
+							<li><button data-notes="shape4" class="group penta b"><b>FOUR</b></button></li>
+							<li><button data-notes="shape5" class="group penta g"><b>FIVE</b></button></li>
+						</ul>
+					</div>
+					<div class="col-12 col-lg-6  col-xl-5">
+						<h3>Notes in Chords</h3>
+						<ul class="pt-4">
+							<li><button data-notes="en an cs" class="group chords a"><b>A</b></button></li>
+							<li><button data-notes="en an cn" class="group chords a"><b>Am</b></button></li>
+							<li><button data-notes="fs bn ds" class="group chords b"><b>B</b></button></li>
+							<li><button data-notes="fs bn dn" class="group chords b"><b>Bm</b></button></li>
+							<li><button data-notes="cn gn en" class="group chords c"><b>C</b></button></li>
+							<li><button data-notes="cn gn ds" class="group chords c"><b>Cm</b></button></li>
+							<li><button data-notes="fs dn an" class="group chords d"><b>D</b></button></li>
+							<li><button data-notes="fs bn dn" class="group chords d"><b>Dm</b></button></li>
+							<li><button data-notes="en bn gs" class="group chords e"><b>E</b></button></li>
+							<li><button data-notes="en bn an" class="group chords e"><b>Em</b></button></li>
+							<li><button data-notes="fn cn an" class="group chords f"><b>F</b></button></li>
+							<li><button data-notes="fn cn gs" class="group chords f"><b>Fm</b></button></li>
+							<li><button data-notes="gn bn dn" class="group chords g"><b>G</b></button></li>
+							<li><button data-notes="gn as dn" class="group chords g"><b>Gm</b></button></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
 	</div>
 	<footer>
 		<div class="container">
@@ -222,25 +222,50 @@
 				<li>Monetize and retire by 40</li>
 			</ol>
 			<hr>
-			<p><a href="mailto:brendan@marett.net">Made by Brendan</a> – All rights reserved &copy;2021</p>
+			<p><a href="mailto:brendan@marett.net">Made by Brendan</a> because I was bored & struggling to learn the fretboard. All rights reserved &copy;2021. <br>Nylon string guitar sounds by <a href="https://freesound.org/people/Kyster/packs/7398/?ref=fretboard" target="_blank">Kyster</a>.</p>
 		</div>
 	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<div class="audio">
+		<audio preload="none" data-note="an" src="assets/audio/7398__kyster__notes-on-nylon-strings/117708__kyster__a.mp3"></audio>
+		<audio preload="none" data-note="as" src="assets/audio/7398__kyster__notes-on-nylon-strings/117707__kyster__a.mp3"></audio>
+		<audio preload="none" data-note="bn" src="assets/audio/7398__kyster__notes-on-nylon-strings/117709__kyster__b.mp3"></audio>
+		<audio preload="none" data-note="cn" src="assets/audio/7398__kyster__notes-on-nylon-strings/117711__kyster__c.mp3"></audio>
+		<audio preload="none" data-note="cs" src="assets/audio/7398__kyster__notes-on-nylon-strings/117710__kyster__c.mp3"></audio>
+		<audio preload="none" data-note="dn" src="assets/audio/7398__kyster__notes-on-nylon-strings/117713__kyster__d.mp3"></audio>
+		<audio preload="none" data-note="ds" src="assets/audio/7398__kyster__notes-on-nylon-strings/117712__kyster__d.mp3"></audio>
+		<audio preload="none" data-note="en" src="assets/audio/7398__kyster__notes-on-nylon-strings/117714__kyster__e.mp3"></audio>
+		<audio preload="none" data-note="fn" src="assets/audio/7398__kyster__notes-on-nylon-strings/117716__kyster__f.mp3"></audio>
+		<audio preload="none" data-note="fs" src="assets/audio/7398__kyster__notes-on-nylon-strings/117715__kyster__f.mp3"></audio>
+		<audio preload="none" data-note="gn" src="assets/audio/7398__kyster__notes-on-nylon-strings/117718__kyster__g.mp3"></audio>
+		<audio preload="none" data-note="gs" src="assets/audio/7398__kyster__notes-on-nylon-strings/117717__kyster__g.mp3"></audio>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+	
 	<script>
 		$(function() {
 			$('button.note').click(function() {
 				let onNotes = $(this).data('note');
-				let fretNotes = $('.fretboard span.note' + onNotes);
+				let fretNotes = $('.fretboard span.note[data-note="' + onNotes + '"]');
 				let clearButton = $('button.clear');
+				let audioFile = $('audio[data-note="' + onNotes + '"]');
+				let isMuted = $('button.mute').hasClass('on');
 				$(this).toggleClass('on');
 				$(fretNotes).toggleClass('on');
+				if ($(this).hasClass('on') && !isMuted) {
+					audioFile.get(0).currentTime = 0;
+					audioFile.get(0).play();
+				} else {
+					//audioFile[0].pause();           
+				}
 				let activeNotes = $('.fretboard span.note.on').length;
 				if (activeNotes > 0) {
 					clearButton.addClass('on');
+				} else {
+					clearButton.removeClass('on');
 				}
 			});
-
 			$('.fretboard .item').click(function() {
 				$(this).find('span.note').toggleClass('highlight');
 				let clearButton = $('button.clear');
@@ -249,79 +274,91 @@
 					clearButton.addClass('on');
 				}
 			});
-
 			$('button.clear').click(function() {
 				$('.fretboard .note').removeClass('on highlight');
 				$('button.note').removeClass('on');
 				$(this).removeClass('on');
 			});
-
+			$('button.mute').click(function() {
+				let isMuted = $('button.mute').hasClass('on');
+				if (!isMuted) {
+					$(this).addClass('on');
+					$('audio').each(function() {
+						this.pause();
+						this.currentTime = 0;
+					});
+				} else {
+					$(this).removeClass('on');
+				}
+			});
 			$('button.chords').click(function() {
 				let onNotes = $(this).data('notes');
 				let fretNote = $('.fretboard .note');
 				$('button.penta').removeClass('on');
-
 				if ($(this).hasClass('on')) {
 					$(this).removeClass('on');
 					$(fretNote).removeClass('chord-on');
 				} else {
 					$(fretNote).removeClass('chord-on penta-on shape1 shape2 shape3 shape4 shape5');
-					$('button.note').removeClass('chord-on');
+					//$('button.note').removeClass('chord-on');
 					$('button.chords').removeClass('on');
 					$(this).toggleClass('on');
-
 					if (onNotes.indexOf("an") != -1) {
-						$('.fretboard .note.a.n').addClass('chord-on');
-						$('.fretboard .note.a.o').addClass('chord-on');
+						$('.fretboard span.note[data-note="an"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="ano"]').addClass('chord-on');
+						//$('.fretboard .note.a.o').addClass('chord-on');
 					}
 					if (onNotes.indexOf("as") != -1) {
-						$('.fretboard .note.a.s').addClass('chord-on');
+						$('.fretboard span.note[data-note="as"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="aso"]').addClass('chord-on');
 					}
 					if (onNotes.indexOf("bn") != -1) {
-						$('.fretboard .note.b.n').addClass('chord-on');
-						$('.fretboard .note.b.o').addClass('chord-on');
+						$('.fretboard span.note[data-note="bn"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="bno"]').addClass('chord-on');
 					}
 					if (onNotes.indexOf("cn") != -1) {
-						$('.fretboard .note.c.n').addClass('chord-on');
-						$('.fretboard .note.c.o').addClass('chord-on');
+						$('.fretboard span.note[data-note="cn"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="cno"]').addClass('chord-on');
 					}
 					if (onNotes.indexOf("cs") != -1) {
-						$('.fretboard .note.c.s').addClass('chord-on');
+						$('.fretboard span.note[data-note="cs"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="cso"]').addClass('chord-on');
 					}
 					if (onNotes.indexOf("dn") != -1) {
-						$('.fretboard .note.d.n').addClass('chord-on');
-						$('.fretboard .note.d.o').addClass('chord-on');
+						$('.fretboard span.note[data-note="dn"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="dno"]').addClass('chord-on');
 					}
 					if (onNotes.indexOf("ds") != -1) {
-						$('.fretboard .note.d.s').addClass('chord-on');
+						$('.fretboard span.note[data-note="ds"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="dso"]').addClass('chord-on');
 					}
 					if (onNotes.indexOf("en") != -1) {
-						$('.fretboard .note.e.n').addClass('chord-on');
-						$('.fretboard .note.e.o').addClass('chord-on');
+						$('.fretboard span.note[data-note="en"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="eno"]').addClass('chord-on');
 					}
 					if (onNotes.indexOf("fn") != -1) {
-						$('.fretboard .note.f.n').addClass('chord-on');
-						$('.fretboard .note.f.o').addClass('chord-on');
+						$('.fretboard span.note[data-note="fn"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="fno"]').addClass('chord-on');
 					}
 					if (onNotes.indexOf("fs") != -1) {
-						$('.fretboard .note.f.s').addClass('chord-on');
+						$('.fretboard span.note[data-note="fs"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="fso"]').addClass('chord-on');
 					}
 					if (onNotes.indexOf("gn") != -1) {
-						$('.fretboard .note.g.n').addClass('chord-on');
-						$('.fretboard .note.g.o').addClass('chord-on');
+						$('.fretboard span.note[data-note="gn"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="gno"]').addClass('chord-on');
 					}
 					if (onNotes.indexOf("gs") != -1) {
-						$('.fretboard .note.g.s').addClass('chord-on');
+						$('.fretboard span.note[data-note="gs"]').addClass('chord-on');
+						$('.fretboard span.note[data-note="gso"]').addClass('chord-on');
 					}
 				}
 			});
-
 			$('button.penta').click(function() {
 				let onNotes = $(this).data('notes');
 				let fretNotes = $('.fretboard span.note');
 				let fretPentaNotes = $('.fretboard span[data-shape*="' + onNotes + '"]');
 				$('button.chords').removeClass('on');
-
 				if ($(this).hasClass('on')) {
 					$(this).removeClass('on');
 					$(fretPentaNotes).toggleClass(onNotes);
@@ -331,13 +368,9 @@
 					$(fretNotes).removeClass('chord-on on');
 					$(fretPentaNotes).toggleClass(onNotes);
 					$(fretPentaNotes).addClass('penta-on');
-
 					//if (fretPentaNotes.indexOf("shape2") != -1) {}
-
 				}
 			});
-
-
 		});
 	</script>
 </body></html>
